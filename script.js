@@ -50,10 +50,6 @@ document.getElementById("pinInput")
 
 }
 
-/* =========================
-   OPEN HEART
-========================= */
-
 function openHeart(){
 
 document.getElementById("bottleSection")
@@ -135,10 +131,7 @@ scale(.5);
 100%{
 opacity:0;
 transform:
-translate(
-var(--x),
-var(--y)
-)
+translate(var(--x),var(--y))
 scale(1.5)
 rotate(360deg);
 }
@@ -182,22 +175,13 @@ typeLetter();
 
 }
 
-/* =========================
-   FLOWER BURST
-========================= */
-
 function createFlowerBurst(){
 
 const flowers =
 document.getElementById("flowers");
 
 const emojis = [
-"❤️",
-"✨",
-"🌹",
-"❤️",
-"✨",
-"🌹"
+"❤️","🌹","✨","🌷","💫"
 ];
 
 for(let i=0;i<40;i++){
@@ -265,10 +249,8 @@ i'll still choose you,
 over and over again.
 
 sayang aku gatau kedepannya
-kita kayak gimana.
-
-tapi disetiap kesempatan
-aku bakal tetap milih kamu
+kita kayak gimana tapi disetiap
+kesempatan aku bakal tetap milih kamu
 disetiap versi hidupku.
 
 kamu tau sendiri,
@@ -276,13 +258,12 @@ gimana bisa aku cinta orang lain
 padahal hatiku isinya
 udah kamu semua.
 
-aku juga sadar,
-sayang sama kamu
-itu keputusan terbaik
-yang pernah aku lakuin.
+aku juga sadar sayang sama kamu
+itu keputusan terbaik yang pernah
+aku lakuin.
 
-makanya aku bakal gitu terus,
-sayang setiap hari.
+makanya aku bakal gitu terus sayang
+setiap hari.
 
 no matter where life takes us,
 i hope i'll always be the reason
@@ -292,8 +273,7 @@ just like you'll always be mine.
 
 happy mensive, shaka.
 
-i love you,
-endlessly ❤️
+i love you endlessly ❤️
 
 - jasper
 
@@ -371,19 +351,19 @@ behavior:"smooth"
 }
 
 /* =========================
-   CONFETTI
+   SPECIAL PHOTO EFFECT
 ========================= */
 
 function createConfetti(){
 
-for(let i=0;i<80;i++){
+for(let i=0;i<150;i++){
 
 const confetti =
 document.createElement("div");
 
 confetti.innerHTML =
-["❤️","✨","🌹"][
-Math.floor(Math.random()*3)
+["❤️","🌹","🌷","🌸","✨","⭐","💫"][
+Math.floor(Math.random()*7)
 ];
 
 confetti.style.position =
@@ -399,7 +379,7 @@ confetti.style.fontSize =
 (Math.random()*20+15)+"px";
 
 confetti.style.animation =
-`fall ${Math.random()*3+3}s linear`;
+`fall ${Math.random()*5+5}s linear`;
 
 confetti.style.pointerEvents =
 "none";
@@ -412,7 +392,7 @@ setTimeout(()=>{
 
 confetti.remove();
 
-},6000);
+},10000);
 
 }
 
