@@ -366,8 +366,9 @@ confetti.innerHTML =
 Math.floor(Math.random()*7)
 ];
 
-confetti.style.position =
-"fixed";
+confetti.style.position = "fixed";
+confetti.style.zIndex = "99999";
+confetti.style.pointerEvents = "none";
 
 confetti.style.left =
 Math.random()*100 + "vw";
