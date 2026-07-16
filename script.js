@@ -356,6 +356,8 @@ behavior:"smooth"
 
 function createConfetti(){
 
+alert("CONFETTI JALAN");
+
 for(let i=0;i<150;i++){
 
 const confetti =
